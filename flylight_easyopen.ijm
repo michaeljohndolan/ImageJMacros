@@ -50,7 +50,7 @@ macro "flylight_easyopen [u]" {
 			}	
 		}
 		open("/Users/dolanm/Desktop/wfb_ysx_template_dpx_subsampled.tif");
-		run("Merge Channels...", "c2=wfb_ysx_template_dpx_subsampled.tif c6=neuropil create keep");
+		run("Merge Channels...", "c2=neuropil c6=wfb_ysx_template_dpx_subsampled.tif create keep");
 		run("Merge Channels...", "c2=flag c4=sytHA c6=neuropil create");
 		run("Z Project...", "projection=[Standard Deviation]");
 		selectWindow("wfb_ysx_template_dpx_subsampled.tif");
